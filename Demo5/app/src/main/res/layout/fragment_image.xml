@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fec5e6">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <View
+                android:id="@+id/ellipse_1"
+                android:layout_width="329dp"
+                android:layout_height="329dp"
+                android:layout_marginStart="242dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginEnd="242dp"
+                android:layout_marginBottom="242dp"
+                android:alpha="0.46000000834465"
+                android:background="@drawable/ellipse_1_shape" />
+            <View
+                android:id="@+id/ellipse_2"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginBottom="242dp"
+                android:alpha="0.211"
+                android:background="@drawable/ellipse_1_shape" />
+            <View
+                android:id="@+id/ellipse_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginBottom="242dp"
+                android:alpha="0.3333"
+                android:background="@drawable/ellipse_1_shape" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="369dp"
+                    android:layout_height="270dp"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <Button
+                        android:id="@+id/bt_searchImageView"
+                        android:fontFamily="@font/inter_medium"
+                        android:backgroundTint="@color/ellipse_1_color"
+                        app:cornerRadius="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Search on Google"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/btn_choose"
+                        android:fontFamily="@font/inter_medium"
+                        android:backgroundTint="@color/ellipse_1_color"
+                        app:cornerRadius="30dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text="Choose from device"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <Button
+                        android:id="@+id/btn_open"
+                        android:fontFamily="@font/inter_medium"
+                        android:backgroundTint="@color/ellipse_1_color"
+                        app:cornerRadius="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="Open Camera/recorder"
+                        android:layout_marginLeft="40dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="328dp"
+                    android:layout_height="298dp"
+                    android:layout_marginTop="68dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.191" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

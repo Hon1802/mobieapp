@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_song"
+    android:scrollbars="vertical"
+    android:fillViewport="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fec5e6">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <View
+                android:id="@+id/ellipse_1"
+                android:layout_width="329dp"
+                android:layout_height="329dp"
+                android:layout_marginStart="242dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginEnd="242dp"
+                android:layout_marginBottom="242dp"
+                android:alpha="0.46000000834465"
+                android:background="@drawable/ellipse_1_shape" />
+            <View
+                android:id="@+id/ellipse_2"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginBottom="242dp"
+                android:alpha="0.211"
+                android:background="@drawable/ellipse_1_shape" />
+            <View
+                android:id="@+id/ellipse_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginBottom="242dp"
+                android:alpha="0.3333"
+                android:background="@drawable/ellipse_1_shape" />
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/tv_listen"
+                android:background="@color/ellipse_1_color"
+                android:textColor="@color/white"
+                android:padding="15dp"
+                android:fontFamily="@font/inter_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Listening to audio..."
+                android:textSize="30dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center" />
+
+            <RelativeLayout
+                android:id="@+id/relative_1"
+                android:layout_marginTop="150dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:src="@drawable/audio"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_contentListen"
+                    android:fontFamily="@font/dancingscript_medium"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Listening..."
+                    android:textSize="40dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginTop="280dp"
+                    android:textColor="@color/black"
+                    app:cornerRadius="100dp"
+                    />
+
+                <Button
+                    android:id="@+id/bt_searchAudio"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="Search it on Google"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_contentListen"
+                    android:layout_marginTop="60dp"
+                    android:padding="15dp"
+                    android:backgroundTint="@color/ellipse_1_color"
+                    app:cornerRadius="30dp"
+                    />
+
+                <Button
+                    android:id="@+id/bt_listenAgain"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="Listen Again"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/bt_searchAudio"
+                    android:layout_marginTop="20dp"
+                    android:padding="15dp"
+                    android:backgroundTint="@color/ellipse_1_color"
+                    app:cornerRadius="30dp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
